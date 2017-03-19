@@ -2,6 +2,5 @@
 error_reporting(0);
 require 'connect.php';   
 
-$result =$db->query("SELECT * FROM people");
+$result =$db->query("SELECT * FROM users") or die($db->error);
 
-print_r($result);
